@@ -1,0 +1,24 @@
+{
+  "name": "cucumberjsbasics",
+  "version": "1.0.0",
+  "description": "Integrate Cucumber with protractor using cuke reporter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cuke": ".\\node_modules\\.bin\\cucumber-js --format=json:cucumber_report.json && node index.js",
+    "protractorcuke": "protractor protractor.conf.js"
+  },
+  "author": "Gurjeet Bains",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^5.0.2",
+    "properties-reader": "0.0.16"
+  },
+  "devDependencies": {
+    "cucumber-html-reporter": "^4.0.4",
+    "protractor-cucumber-framework": "^6.1.1",
+    "protractor-multiple-cucumber-html-reporter-plugin": "^1.8.0"
+  }
+}

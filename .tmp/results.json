@@ -1,0 +1,121 @@
+[
+  {
+    "description": "    In order to perform successful Login\n    As a user\n    I want to enter correct username and password",
+    "keyword": "Feature",
+    "name": "Login to production",
+    "line": 1,
+    "id": "login-to-production",
+    "tags": [],
+    "uri": "features\\login.feature",
+    "elements": [
+      {
+        "id": "login-to-production;in-order-to-verify-login-to-facebook-on-production",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "In order to verify login to facebook on Production",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I go to \"http://www.way2automation.com/angularjs-protractor/banking/#/login\"",
+            "match": {
+              "location": "features\\stepDefinitions\\stepDefinition.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I found the title as \"Protractor practice website - Banking App\"",
+            "match": {
+              "location": "features\\stepDefinitions\\stepDefinition.js:31"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5004000000,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout._onTimeout (F:\\Protractor\\cucumberjsbasics\\node_modules\\cucumber\\src\\user_code_runner.js:61:18)\n    at ontimeout (timers.js:498:11)\n    at tryOnTimeout (timers.js:323:5)\n    at Timer.listOnTimeout (timers.js:290:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I click on CustomerLogin Button",
+            "match": {
+              "location": "features\\stepDefinitions\\stepDefinition.js:38"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I select the value as \"Harry Potter\" from the list",
+            "match": {
+              "location": "features\\stepDefinitions\\stepDefinition.js:47"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I click on Login",
+            "match": {
+              "location": "features\\stepDefinitions\\stepDefinition.js:54"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Welcome Page should show login as \"Harry Potter\"",
+            "match": {
+              "location": "features\\stepDefinitions\\stepDefinition.js:62"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "features\\stepDefinitions\\stepDefinition.js:10"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5005000000,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout._onTimeout (F:\\Protractor\\cucumberjsbasics\\node_modules\\cucumber\\src\\user_code_runner.js:61:18)\n    at ontimeout (timers.js:498:11)\n    at tryOnTimeout (timers.js:323:5)\n    at Timer.listOnTimeout (timers.js:290:5)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
